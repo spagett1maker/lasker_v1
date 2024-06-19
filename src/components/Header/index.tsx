@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import useWindowDimensions from "@/hooks/useWindowDimensions";
+import { useWindowDimensions } from "@/hooks/useWindowDimensions";
 
 const Header = () => {
   const { width, height } = useWindowDimensions();
@@ -91,7 +91,7 @@ const Header = () => {
                 <li className="inline-block aligh-top relative">
                   <Link href="" className="text-[15px] py-[27px] px-[22px] relative block font-semibold">
                     <span className="relative">
-                      소식
+                      회사소식
                     </span>
                   </Link>
                 </li>
