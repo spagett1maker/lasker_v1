@@ -22,6 +22,7 @@ const useWindowDimensions = () => {
       setWindowDimensions(getWindowDimensions());
     };
     if(typeof window !== 'undefined'){ 
+      
       window.addEventListener("resize", handleResize);
       return () => window.removeEventListener("resize", handleResize);
     }
