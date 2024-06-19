@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import useWindowDimensions from "@/hooks/useWindowDimensions";
 
 const Header = () => {
-  const { height, width } = useWindowDimensions();
+  const { width, height } = useWindowDimensions();
 
   const [sticky, setSticky] = useState(false);
   const handleStickyNavbar = () => {
