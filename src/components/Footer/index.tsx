@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { DownloadIcon } from "../ui/icons";
 
 
 const Footer = () => {
@@ -63,9 +64,11 @@ const Footer = () => {
                 <p className="text-[13px] mb-[21px] text-[#888]">전화번호</p>
               </div>
               <div className="mt-[54px]">
-                <Link href="" className="min-w-[180px] py-[18px] pr-[60px] pl-[19px] shadow-none outline-none text-sm overflow-hidden relative bg-[#f52f23] inline-block align-middle text-white">
-                  <span>회사소개서 다운로드</span>
+                <Link href="" className="min-w-[180px] py-[18px] pr-[19px] pl-[19px] shadow-none outline-none text-sm overflow-hidden relative bg-[#f52f23] align-middle text-white flex">
+                  <span className="pr-[12px]">회사소개서 다운로드</span>
+                  <DownloadIcon />
                 </Link>
+                
               </div>
             </div>
           </div>

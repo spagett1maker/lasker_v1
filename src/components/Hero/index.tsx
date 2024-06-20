@@ -241,6 +241,49 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      {/** 5th section */}
+      <div className="relative overflow-hidden h-screen w-full bg-[#f52f23]">
+        {/** 5th section - bg */}
+        <div className="w-full h-full absolute top-0 left-0 bg-cover">
+          
+        </div>
+        {/** 5th cont */}
+        <div className="table h-full w-full relative max-w-[1280px] m-auto text-left">
+            <div className="table-cell align-middle">
+              <div className="top-[-29px] relative max-w-[984px] my-0 mx-auto">
+                <h2 className="left-[-3px] text-5xl font-bold pb-[52px] text-white relative top-[-3px]">
+                  Let{"'"}s be Together
+                </h2>
+                <ul className="top-[-8px] relative">
+                  <li className="float-left w-1/2 text-white">
+                    <h3 className="pb-[11px] text-sm font-semibold text-white">
+                      Contact
+                    </h3>
+                    <p className="pb-[20px] w-[390px] text-[22px] font-semibold">
+                      최적의 광고를 위한 첫 단추
+                    </p>
+                    <Link href="/" className=" text-base inline-block relative align-middle text-center min-w-[150px] py-[20px] pr-[25px] pl-[5px] font-normal">
+                      <span className="top-[-1px] relative font-semibold">회사 소개 바로가기</span>
+                      <span aria-hidden="true" className="pl-[10px] hover:pl-[22px] relative transition-all">→</span>
+                    </Link>
+                  </li>
+                  <li className="float-right w-1/2 text-white">
+                    <h3 className="pb-[11px] text-sm font-semibold text-white">
+                      Career
+                    </h3>
+                    <p className="pb-[20px] w-[390px] text-[22px] font-semibold">
+                      Lakser는 인재 영입 중
+                    </p>
+                    <Link href="/" className=" text-base inline-block relative align-middle text-center min-w-[150px] py-[20px] pr-[25px] pl-[5px] font-normal">
+                      <span className="top-[-1px] relative font-semibold">채용 공고 바로가기</span>
+                      <span aria-hidden="true" className="pl-[10px] hover:pl-[22px] relative transition-all">→</span>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
     </>
   )
 }
