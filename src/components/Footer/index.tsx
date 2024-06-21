@@ -54,19 +54,19 @@ const Footer = () => {
                 </li>
               </ul>
             </nav>
-            <div className="mb-[107px] pl-[20px] float-left text-white top-[3px] relative block">
+            <div className="mb-[107px] pl-[20px] float-left text-white top-[3px] relative">
               <div>
                 <b className="text-[13px] pb-[10px] block text-[#eee] font-semibold">Address</b>
-                <p className="text-[13px] mb-[21px] text-[#888]">주소</p>
+                <p className="text-[13px] mb-[21px] text-[#888]">대전광역시 유성구 문지로 193, KAIST 진리관 T-139호 {'('}34051{')'}</p>
               </div>
               <div>
                 <b className="text-[13px] pb-[10px] block text-[#eee] font-semibold">Contact</b>
                 <p className="text-[13px] mb-[21px] text-[#888]">전화번호</p>
               </div>
-              <div className="mt-[54px]">
-                <Link href="" className="min-w-[180px] py-[18px] pr-[19px] pl-[19px] shadow-none outline-none text-sm overflow-hidden relative bg-[#f52f23] align-middle text-white flex">
-                  <span className="pr-[12px]">회사소개서 다운로드</span>
-                  <DownloadIcon />
+              <div className="mt-[54px] block align-baseline">
+                <Link href="" className="min-w-[180px] py-[18px] pr-[19px] pl-[19px] shadow-none outline-none text-sm overflow-hidden relative bg-[#f52f23] inline-box align-middle text-white ">
+                  <span className="pr-[20px] inline-block relative top-[-1px]">회사소개서 다운로드</span>
+                  <DownloadIcon className="right-[10px] absolute top-1/2 mt-[-7px]"/>
                 </Link>
                 
               </div>
@@ -101,8 +101,8 @@ const Footer = () => {
               </nav>
               <div>
                 <div className="pt-[6px] pb-[2px]">
-                  <small className="pr-[10px] mr-[7px] text-xs text-[#888]">대표자 : 유수진</small>
-                  <small className="pr-0 mr-0 text-xs text-[#888] relative">사업자등록번호 : 000-00-00000</small>
+                  <small className="pr-[10px] mr-[7px] text-xs text-[#888]">상호명 : (주)라스커</small>
+                  <small className="pr-0 mr-0 text-xs text-[#888] relative">사업자등록번호 : 407-81-33448</small>
                 </div>
                 <small className="block clear-both text-[#888] text-xs">Copyright ⓒ LASKER Co., LTD. All Rights Reserved.</small>
               </div>
