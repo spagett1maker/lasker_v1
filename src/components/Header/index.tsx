@@ -77,28 +77,28 @@ const Header = () => {
             <nav className="block float-left">
               <ul className="inline-block align-top">
                 <li className="inline-block aligh-top relative">
-                  <Link href="" className="text-[15px] py-[27px] px-[22px] relative block font-semibold">
+                  <Link href="/about" className="text-[15px] py-[27px] px-[22px] relative block font-semibold">
                     <span className="relative">
                       회사소개
                     </span>
                   </Link>
                 </li>
                 <li className="inline-block aligh-top relative">
-                  <Link href="" className="text-[15px] py-[27px] px-[22px] relative block font-semibold">
+                  <Link href="/career" className="text-[15px] py-[27px] px-[22px] relative block font-semibold">
                     <span className="relative">
                       인재영입
                     </span>
                   </Link>
                 </li>
                 <li className="inline-block aligh-top relative">
-                  <Link href="" className="text-[15px] py-[27px] px-[22px] relative block font-semibold">
+                  <Link href="/news" className="text-[15px] py-[27px] px-[22px] relative block font-semibold">
                     <span className="relative">
                       회사소식
                     </span>
                   </Link>
                 </li>
                 <li className="inline-block aligh-top relative">
-                  <Link href="" className="text-whitelllll text-[15px] py-[27px] px-[22px] relative block font-semibold">
+                  <Link href="/contact" className="text-whitelllll text-[15px] py-[27px] px-[22px] relative block font-semibold">
                     <span className="relative">
                       문의하기
                     </span>

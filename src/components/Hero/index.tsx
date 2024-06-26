@@ -27,69 +27,69 @@ const Hero = () => {
           </div>
       </div>
       {/** 2nd section */}
-      <div className="relative overflow-hidden h-screen w-full bg-white">
+      <div className="relative overflow-hidden h-screen w-full bg-[#efeeea]">
         {/** 2nd section - bg */}
         <div className="w-full h-full absolute top-0 left-0 bg-cover">
           
         </div>
         {/** 2nd section cont */}
         <div className="table h-full w-full relative max-w-[1280px] m-auto text-left">
-            <div className=" table-cell align-middle">
-              <div className="max-w-[984px] my-0 mx-auto">
-                <div className="mt-[-10px] float-left w-1/2">
-                  <h2 className="mb-[25px] relative top-[3px] pb-[33px] text-5xl font-bold">
-                    Our Value, <br/>
-                    Goal and Vision
-                  </h2>
-                  <Link href="/" className=" text-base inline-block relative align-middle text-center min-w-[150px] py-[20px] pr-[25px] pl-[5px] font-normal">
-                    <span className="text-black">회사 소개 바로가기</span>
-                    <span aria-hidden="true" className="pl-[10px] hover:pl-[22px] relative transition-all">→</span>
-                  </Link>
-                </div>
-                <ul className="top-[4px] w-1/2 float-right pl-[20px] relative">
-                  <li className="mb-[33px] pb-[33px] clear-both border-b border-solid border-[#eee]">
-                    <h3 className=" text-lg pb-0 float-left text-[#f52f23] font-bold">
-                      Identity
-                    </h3>
-                    <p className="pl-[146px]">
-                      <strong className="text-lg pb-0 font-bold block text-black">
-                        <i>No.</i> 1 영상 광고 솔루션 회사
-                      </strong>
-                      <span>
-                        최적화된 맥락 기반 영상 광고 솔루션 제공
-                      </span>
-                    </p>
-                  </li>
-                  <li className="mb-[33px] pb-[33px] clear-both border-b border-solid border-[#eee]">
-                    <h3 className=" text-lg pb-0 float-left text-[#f52f23] font-bold">
-                      Strength
-                    </h3>
-                    <p className="pl-[146px]">
-                      <strong className="text-lg pb-0 font-bold block text-black">
-                        <i>No.</i> 2 맥락 기반의 광고 송출
-                      </strong>
-                      <span>
-                        AI를 활용한 영상 맥락 분석을 통한 타겟팅
-                      </span>
-                    </p>
-                  </li>
-                  <li className="mb-[33px] pb-[33px] clear-both border-b border-solid border-[#eee]">
-                    <h3 className=" text-lg pb-0 float-left text-[#f52f23] font-bold">
-                      Challenge
-                    </h3>
-                    <p className="pl-[146px]">
-                      <strong className="text-lg pb-0 font-bold block text-black">
-                        <i>No.</i> 3 영상 광고 시장의 혁신
-                      </strong>
-                      <span>
-                        시청 경험을 방해하지 않는 광고 솔루션
-                      </span>
-                    </p>
-                  </li>
-                </ul>
+          <div className=" table-cell align-middle">
+            <div className="max-w-[984px] my-0 mx-auto">
+              <div className="mt-[-10px] float-left w-1/2">
+                <h2 className="mb-[25px] relative top-[3px] pb-[33px] text-5xl font-bold">
+                  Our Value, <br/>
+                  Goal and Vision
+                </h2>
+                <Link href="/" className=" text-base inline-block relative align-middle text-center min-w-[150px] py-[20px] pr-[25px] pl-[5px] font-normal">
+                  <span className="text-black">회사 소개 바로가기</span>
+                  <span aria-hidden="true" className="pl-[10px] hover:pl-[22px] relative transition-all">→</span>
+                </Link>
               </div>
+              <ul className="top-[4px] w-1/2 float-right pl-[20px] relative">
+                <li className="mb-[33px] pb-[33px] clear-both border-b border-solid border-[#eee]">
+                  <h3 className=" text-lg pb-0 float-left text-[#00a0e9] font-bold">
+                    Identity
+                  </h3>
+                  <p className="pl-[146px]">
+                    <strong className="text-lg pb-0 font-bold block text-black">
+                      <i>No.</i> 1 영상 광고 솔루션 회사
+                    </strong>
+                    <span>
+                      최적화된 맥락 기반 영상 광고 솔루션 제공
+                    </span>
+                  </p>
+                </li>
+                <li className="mb-[33px] pb-[33px] clear-both border-b border-solid border-[#eee]">
+                  <h3 className=" text-lg pb-0 float-left text-[#00a0e9] font-bold">
+                    Strength
+                  </h3>
+                  <p className="pl-[146px]">
+                    <strong className="text-lg pb-0 font-bold block text-black">
+                      <i>No.</i> 2 맥락 기반의 광고 송출
+                    </strong>
+                    <span>
+                      AI를 활용한 영상 맥락 분석을 통한 타겟팅
+                    </span>
+                  </p>
+                </li>
+                <li className="mb-[33px] pb-[33px] clear-both border-b border-solid border-[#eee]">
+                  <h3 className=" text-lg pb-0 float-left text-[#00a0e9] font-bold">
+                    Challenge
+                  </h3>
+                  <p className="pl-[146px]">
+                    <strong className="text-lg pb-0 font-bold block text-black">
+                      <i>No.</i> 3 영상 광고 시장의 혁신
+                    </strong>
+                    <span>
+                      시청 경험을 방해하지 않는 광고 솔루션
+                    </span>
+                  </p>
+                </li>
+              </ul>
             </div>
           </div>
+        </div>
       </div>
       {/** 3rd section */}
       <div className="relative overflow-hidden h-screen w-full bg-black">
@@ -213,7 +213,7 @@ const Hero = () => {
           </div>
       </div>
       {/** 4th section */}
-      <div className="relative overflow-hidden h-screen w-full bg-white">
+      <div className="relative overflow-hidden h-screen w-full bg-[#efeeea]">
         {/** 4th-section cont */}
         <div className="table h-full w-full relative max-w-[1280px] m-auto text-left">
           <div className="table-cell align-middle">
@@ -242,7 +242,7 @@ const Hero = () => {
         </div>
       </div>
       {/** 5th section */}
-      <div className="relative overflow-hidden h-screen w-full bg-[#f52f23]">
+      <div className="relative overflow-hidden h-screen w-full bg-[#00a0e9]">
         {/** 5th section - bg */}
         <div className="w-full h-full absolute top-0 left-0 bg-cover">
           

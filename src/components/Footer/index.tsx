@@ -64,7 +64,7 @@ const Footer = () => {
                 <p className="text-[13px] mb-[21px] text-[#888]">전화번호</p>
               </div>
               <div className="mt-[54px] block align-baseline">
-                <Link href="" className="min-w-[180px] py-[18px] pr-[19px] pl-[19px] shadow-none outline-none text-sm overflow-hidden relative bg-[#f52f23] inline-box align-middle text-white ">
+                <Link href="" className="min-w-[180px] py-[18px] pr-[19px] pl-[19px] shadow-none outline-none text-sm overflow-hidden relative bg-[#00a0e9] inline-box align-middle text-white ">
                   <span className="pr-[20px] inline-block relative top-[-1px]">회사소개서 다운로드</span>
                   <DownloadIcon className="right-[10px] absolute top-1/2 mt-[-7px]"/>
                 </Link>
