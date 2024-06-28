@@ -51,7 +51,7 @@ const Hero = () => {
                   Our Value, <br/>
                   Goal and Vision
                 </h2>
-                <Link href="/" className=" text-base inline-block relative align-middle text-center min-w-[150px] py-[20px] pr-[25px] pl-[5px] font-normal">
+                <Link href="/about" className=" text-base inline-block relative align-middle text-center min-w-[150px] py-[20px] pr-[25px] pl-[5px] font-normal">
                   <span className="text-black">회사 소개 바로가기</span>
                   <span aria-hidden="true" className="pl-[10px] hover:pl-[22px] relative transition-all">→</span>
                 </Link>
@@ -277,7 +277,7 @@ const Hero = () => {
                     <p className="pb-[20px] w-[390px] text-[22px] font-semibold">
                       최적의 광고를 위한 첫 단추
                     </p>
-                    <Link href="/" className=" text-base inline-block relative align-middle text-center min-w-[150px] py-[20px] pr-[25px] pl-[5px] font-normal">
+                    <Link href="/about" className=" text-base inline-block relative align-middle text-center min-w-[150px] py-[20px] pr-[25px] pl-[5px] font-normal">
                       <span className="top-[-1px] relative font-semibold">회사 소개 바로가기</span>
                       <span aria-hidden="true" className="pl-[10px] hover:pl-[22px] relative transition-all">→</span>
                     </Link>
@@ -289,7 +289,7 @@ const Hero = () => {
                     <p className="pb-[20px] w-[390px] text-[22px] font-semibold">
                       Lakser는 인재 영입 중
                     </p>
-                    <Link href="/" className=" text-base inline-block relative align-middle text-center min-w-[150px] py-[20px] pr-[25px] pl-[5px] font-normal">
+                    <Link href="/career" className=" text-base inline-block relative align-middle text-center min-w-[150px] py-[20px] pr-[25px] pl-[5px] font-normal">
                       <span className="top-[-1px] relative font-semibold">채용 공고 바로가기</span>
                       <span aria-hidden="true" className="pl-[10px] hover:pl-[22px] relative transition-all">→</span>
                     </Link>
