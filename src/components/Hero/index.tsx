@@ -49,7 +49,7 @@ const Hero = () => {
               <ul className="top-[4px] w-1/2 float-right pl-[20px] relative">
                 <li className="mb-[33px] pb-[33px] clear-both border-b border-solid border-[#eee]">
                   <h3 className=" text-lg pb-0 float-left text-[#00a0e9] font-bold">
-                    Identity
+                    Professionalism
                   </h3>
                   <p className="pl-[146px]">
                     <strong className="text-lg pb-0 font-bold block text-black">
@@ -62,7 +62,7 @@ const Hero = () => {
                 </li>
                 <li className="mb-[33px] pb-[33px] clear-both border-b border-solid border-[#eee]">
                   <h3 className=" text-lg pb-0 float-left text-[#00a0e9] font-bold">
-                    Strength
+                    Innovation
                   </h3>
                   <p className="pl-[146px]">
                     <strong className="text-lg pb-0 font-bold block text-black">
@@ -75,7 +75,7 @@ const Hero = () => {
                 </li>
                 <li className="mb-[33px] pb-[33px] clear-both border-b border-solid border-[#eee]">
                   <h3 className=" text-lg pb-0 float-left text-[#00a0e9] font-bold">
-                    Challenge
+                    Share
                   </h3>
                   <p className="pl-[146px]">
                     <strong className="text-lg pb-0 font-bold block text-black">

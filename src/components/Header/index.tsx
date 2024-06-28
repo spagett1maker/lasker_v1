@@ -1,24 +1,36 @@
 "use client"
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useWindowDimensions } from "@/hooks/useWindowDimensions";
 
-const Header = () => {
+const reverseColor = (color: number|boolean) => {
+  return color === 1 ? 0 : 1;
+}
+
+const Header = ( {startColor, menuVisible} : {startColor : number, menuVisible : boolean} ) => {
   const { width, height } = useWindowDimensions();
 
-  const [sticky, setSticky] = useState(false);
+  const [sticky, setSticky] = useState(startColor);
+  const [logoColor, setlogoColor] = useState(startColor);
+
   const handleStickyNavbar = () => {
     if(window.scrollY > 4*height-100) {
-      setSticky(false);
+      setSticky(startColor);
+      setlogoColor(startColor);
     } else if(window.scrollY > 3*height-100) {
-      setSticky(true);
+      setSticky(reverseColor(startColor));
+      setlogoColor(reverseColor(startColor));
     } else if ((window.scrollY > 2*height-100)) {
-      setSticky(false);
+      setSticky(startColor);
+      setlogoColor(startColor);
     } else if ((window.scrollY > height-100)) {
-      setSticky(true);
+      setSticky(reverseColor(startColor));
+      setlogoColor(reverseColor(startColor));
     } else {
-      setSticky(false);
+      setSticky(startColor);
+      setlogoColor(startColor);
     }
   };
   useEffect(() => {
@@ -26,31 +38,37 @@ const Header = () => {
   });
 
   return (
-    <div className={`${sticky ? "text-black" : "text-white"} m-0 p-0 b-0 block`}>
+    <div className={`${sticky ? "text-white" : "text-black"} m-0 p-0 b-0 block`}>
       {/** menu bar */}
       <div className="top-[20px] right-[40px] fixed z-50">
         <button className="border-nome bg-none h-[40px] p-[25px] w-[33px] relative box-content">
           <span className="h-full overflow-hidden block relative">
-            <div className={`${sticky ? "bg-black" : "bg-white"} top-[10px] h-[3px] absolute block left-0 w-full overflow-hidden`}>
+            <div className={`${sticky ? "bg-white" : "bg-black"} top-[10px] h-[3px] absolute block left-0 w-full overflow-hidden`}>
               <span className="w-full h-full"></span>
             </div>
-            <div className={`${sticky ? "bg-black" : "bg-white"} top-[21px] h-[3px] absolute block left-0 w-full overflow-hidden`}>
+            <div className={`${sticky ? "bg-white" : "bg-black"} top-[21px] h-[3px] absolute block left-0 w-full overflow-hidden`}>
               <span className="w-full h-full"></span>
             </div>
           </span>
         </button>
       </div>
       {/** header */}
+      
       <header className="w-full h-[110px] fixed t-0 l-0 z-50">
         <div className="mx-[64px] my-0 h-full relative">
           {/** Logo */}
-          <h1 className="w-[116px] h-[24px] top-[44px] absolute left-0">
+          <h1 className="w-[250px] h-[80px] top-[15px] absolute left-[-20px]">
             <Link href="/" className="block w-full h-full text-3xl">
-              Lasker
+              { logoColor ? 
+                <Image src="/logo_white.png" alt="logo" className="block h-full w-full" width={600} height={200} />
+                :
+                <Image src="/logo_black.png" alt="logo" className="block h-full w-full" width={600} height={200} />
+              }
             </Link>
           </h1>
           {/** Language */}
-          <nav className="top-[44px] left-[156px] absolute">
+          { menuVisible ?
+          <nav className="top-[44px] left-[230px] absolute">
             <ul>
               <li className=" float-left relative">
                 <Link href="/" 
@@ -71,8 +89,9 @@ const Header = () => {
                 </Link>
               </li>
             </ul>
-          </nav>
+          </nav> : <></>}
           {/** Menu */}
+          { menuVisible ?
           <div className="mt-[24px] mr-[54px] block relative float-right">
             <nav className="block float-left">
               <ul className="inline-block align-top">
@@ -106,7 +125,7 @@ const Header = () => {
                 </li>
               </ul>
             </nav>
-          </div>
+          </div> : <></>}
         </div>
       </header>
     </div>
