@@ -1,7 +1,7 @@
 "use client";
 
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import HeaderO from "@/components/Header/other";
 
 import { useState } from "react";
 
@@ -37,12 +37,12 @@ export default function About() {
 
   return (
     <>
-      <Header startColor={0} menuVisible={false} />
+      <HeaderO menuVisible={false} />
       <div className="relative overflow-hidden">
         <div className="block p-0">
           <div className="relative my-0 mx-auto overflow-hidden p-0">
             {/** contact section */}
-            <div className="relative overflow-hidden h-screen w-full bg-white">
+            <div className="relative overflow-hidden h-[924px] w-full bg-white">
               <div className="table h-full w-full relative max-w-[1280px] m-auto text-left text-black">
                 <div className=" table-cell align-middle">
                   <div className="max-w-[984px] my-0 mx-auto">
@@ -106,7 +106,7 @@ export default function About() {
                             </div>
                           </section>
                           
-                          <section className="">
+                          <section className="pt-[70px]">
                             <div className='flex flex-row items-center justify-start mb-[10px]'>
                               <label className='inline-block h-[18px] w-[18px] justify-center items-center'>
                                 <input 
@@ -151,7 +151,7 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <Footer />
+            
           </div>
         </div>
       </div>

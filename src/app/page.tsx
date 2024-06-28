@@ -1,5 +1,5 @@
 import Hero from "@/components/Hero";
-import Header from "@/components/Header";
+import Header from "@/components/Header/main";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -10,7 +10,6 @@ export default function Home() {
         <div className="block p-0">
           <div className="relative my-0 mx-auto overflow-hidden p-0">
             <Hero />
-            
           </div>
         </div>
       </div>

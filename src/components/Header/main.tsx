@@ -9,23 +9,37 @@ const reverseColor = (color: number|boolean) => {
   return color === 1 ? 0 : 1;
 }
 
-const Header = ( {startColor, menuVisible} : {startColor : number, menuVisible : boolean} ) => {
+const Header = ( {startColor, menuVisible, bg} : {startColor : number, menuVisible : boolean, bg:any} ) => {
   const { width, height } = useWindowDimensions();
 
   const [sticky, setSticky] = useState(startColor);
+  const [bgsticky, setBgSticky] = useState(false);
   const [logoColor, setlogoColor] = useState(startColor);
+  const [background, setBackground] = useState(bg);
+
+  const handlebgStickyNavbar = () => {
+    if (window.scrollY > 0) {
+      setBgSticky(true);
+    } else {
+      setBgSticky(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handlebgStickyNavbar);
+  });
 
   const handleStickyNavbar = () => {
-    if(window.scrollY > 4*height-100) {
+    if(window.scrollY > 4*height-70) {
       setSticky(startColor);
       setlogoColor(startColor);
-    } else if(window.scrollY > 3*height-100) {
+    } else if(window.scrollY > 3*height-70) {
       setSticky(reverseColor(startColor));
       setlogoColor(reverseColor(startColor));
-    } else if ((window.scrollY > 2*height-100)) {
+    } else if ((window.scrollY > 2*height-70)) {
       setSticky(startColor);
       setlogoColor(startColor);
-    } else if ((window.scrollY > height-100)) {
+    } else if ((window.scrollY > height-70)) {
       setSticky(reverseColor(startColor));
       setlogoColor(reverseColor(startColor));
     } else {
@@ -74,7 +88,7 @@ const Header = ( {startColor, menuVisible} : {startColor : number, menuVisible :
                 <Link href="/" 
                   className="text-xs inline-block
                               relative py-[10px] px-[9px] font-bold">
-                  <span className="relative hover:border-b-2 hover:border-[#f52f23] pb-[2px]">
+                  <span className="relative hover:border-b-2 hover:border-[#00a0e9] pb-[2px]">
                     KOR
                   </span>
                 </Link>
@@ -83,7 +97,7 @@ const Header = ( {startColor, menuVisible} : {startColor : number, menuVisible :
                 <Link href="/" 
                   className=" text-xs inline-block
                               relative py-[10px] px-[9px] font-bold">
-                  <span className="relative hover:border-b-2 hover:border-[#f52f23] pb-[2px]">
+                  <span className="relative hover:border-b-2 hover:border-[#00a0e9] pb-[2px]">
                     ENG
                   </span>
                 </Link>

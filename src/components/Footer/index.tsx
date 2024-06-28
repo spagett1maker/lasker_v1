@@ -12,24 +12,24 @@ const Footer = () => {
             <nav className="float-left w-1/2 relative top-[-4px]">
               <ul className="block ps-[40px]">
                 <li className="relative max-w-[300px] pb-[14px]">
-                  <Link href="" className="text-white font-medium text-2xl">
+                  <Link href="/about" className="text-white font-medium text-2xl">
                     <span>회사소개</span>
                   </Link>
                   <ul className="hidden left-[174px] top-[4px] absolute">
                     <li>
-                      <Link href="" className="py-[6px] px-[5px] text-white inline-block text-base whitespace-nowrap">
+                      <Link href="/" className="py-[6px] px-[5px] text-white inline-block text-base whitespace-nowrap">
                         <span>라스커 소개</span>
                       </Link>
                     </li>
                     <li>
-                      <Link href="" className="py-[6px] px-[5px] text-white inline-block text-base whitespace-nowrap">
+                      <Link href="/" className="py-[6px] px-[5px] text-white inline-block text-base whitespace-nowrap">
                         <span>정관</span>
                       </Link>
                     </li>
                   </ul>
                 </li>
                 <li className="relative max-w-[300px] pb-[14px]">
-                  <Link href="" className="text-white font-medium text-2xl">
+                  <Link href="/career" className="text-white font-medium text-2xl">
                     <span>인재영입</span>
                   </Link>
                   <ul className="hidden left-[174px] top-[4px] absolute">
@@ -37,7 +37,7 @@ const Footer = () => {
                   </ul>
                 </li>
                 <li className="relative max-w-[300px] pb-[14px]">
-                  <Link href="" className="text-white font-medium text-2xl">
+                  <Link href="/news" className="text-white font-medium text-2xl">
                     <span>회사소식</span>
                   </Link>
                   <ul className="hidden left-[174px] top-[4px] absolute">
@@ -45,7 +45,7 @@ const Footer = () => {
                   </ul>
                 </li>
                 <li className="relative max-w-[300px]">
-                  <Link href="" className="text-white font-medium text-2xl">
+                  <Link href="/contact" className="text-white font-medium text-2xl">
                     <span>문의하기</span>
                   </Link>
                   <ul className="hidden left-[174px] top-[4px] absolute">

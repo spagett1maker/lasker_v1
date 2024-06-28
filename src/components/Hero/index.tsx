@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Spotlight } from "@/components/ui/bgGrad";
 
 /** */
 
@@ -10,10 +11,19 @@ const Hero = () => {
       <div className="relative overflow-hidden h-screen w-full bg-black">
         {/** main section - bg */}
         <div className="w-full h-full absolute top-0 left-0 bg-cover">
+          <Spotlight
+            className="-top-40 left-0 md:left-60 md:-top-20"
+            fill="white"
+          />
+          <div className="z-0 absolute top-0 left-0 w-[200%] h-[200%] -rotate-[45deg] bg-[#3f3fbf]l bg-[#13144d]"/>
+          <div className=" z-0 absolute top-32 left-0 w-[200%] h-[200%] -rotate-[45deg] bg-black"/>
+          <div className="z-0 absolute top-40 left-0 w-[200%] h-[200%] -rotate-[45deg] bg-[#3f3fbf]l bg-[#13144d]"/>
+          <div className=" z-0 absolute top-52 left-0 w-[200%] h-[200%] -rotate-[45deg] bg-black"/>
           
+
         </div>
         {/** main-section cont */}
-        <div className="table h-full w-full relative max-w-[1280px] m-auto text-left">
+        <div className="z-10 table h-full w-full relative max-w-[1280px] m-auto text-left">
             <div className=" table-cell align-middle">
               <div className="max-w-[984px] my-0 mx-auto">
                 <div className=" text-md top-[12px] left-[-4px] mb-[22px] font-bold mt-[24px] relative text-white">
@@ -93,10 +103,15 @@ const Hero = () => {
       </div>
       {/** 3rd section */}
       <div className="relative overflow-hidden h-screen w-full bg-black">
+        {/** background */}
+        
         {/** 3rd-section cont */}
         <div className="table h-full w-full relative max-w-[1280px] m-auto text-left">
             <div className="table-cell align-middle">
               <div className="relative top-[20px] max-w-[984px] my-0 mx-auto">
+                <div className="w-full h-full absolute top-[-25%] left-[-2%] bg-cover">
+                  <div className="rounded-full h-[50px] w-[50px] bg-[#13144d] from-[#5e5f9f] bg-gradient-to-tr"></div>
+                </div>
                 <div className=" text-5xl font-bold relative top-[-3px] text-white pb-[40px]">What we do</div>
                 <div className=" text-left text-white">
                   {/** sec1 */}
@@ -219,7 +234,7 @@ const Hero = () => {
           <div className="table-cell align-middle">
             <div className="table table-fixed w-full relative top-[30px]">
               <figure className="table-cell w-1/2 align-middle">
-                <Image src="" alt="" height={500} width={500}/>
+                <Image src="/main.jpg" alt="main" height={500} width={500}/>
               </figure>
               <div className="pl-[22px] table-cell w-1/2 align-middle">
                 <h2 className="top-0 mb-[30px] mt-[-45px] text-4xl font-medium relative">
