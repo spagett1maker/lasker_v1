@@ -54,7 +54,7 @@ const Header = ( {startColor, menuVisible, bg} : {startColor : number, menuVisib
   return (
     <div className={`${sticky ? "text-white" : "text-black"} m-0 p-0 b-0 block`}>
       {/** menu bar */}
-      <div className="top-[20px] right-[40px] fixed z-50">
+      <div className="top-[14px] right-[40px] fixed z-50">
         <button className="border-nome bg-none h-[40px] p-[25px] w-[33px] relative box-content">
           <span className="h-full overflow-hidden block relative">
             <div className={`${sticky ? "bg-white" : "bg-black"} top-[10px] h-[3px] absolute block left-0 w-full overflow-hidden`}>
@@ -68,10 +68,10 @@ const Header = ( {startColor, menuVisible, bg} : {startColor : number, menuVisib
       </div>
       {/** header */}
       
-      <header className="w-full h-[110px] fixed t-0 l-0 z-50">
+      <header className="w-full h-[108px] fixed t-0 l-0 z-50">
         <div className="mx-[64px] my-0 h-full relative">
           {/** Logo */}
-          <h1 className="w-[250px] h-[80px] top-[15px] absolute left-[-20px]">
+          <h1 className="w-[250px] h-[80px] top-[9px] absolute left-[-20px]">
             <Link href="/" className="block w-full h-full text-3xl">
               { logoColor ? 
                 <Image src="/logo_white.png" alt="logo" className="block h-full w-full" width={600} height={200} />
@@ -82,7 +82,7 @@ const Header = ( {startColor, menuVisible, bg} : {startColor : number, menuVisib
           </h1>
           {/** Language */}
           { menuVisible ?
-          <nav className="top-[44px] left-[230px] absolute">
+          <nav className="top-[40px] left-[230px] absolute">
             <ul>
               <li className=" float-left relative">
                 <Link href="/" 
@@ -106,7 +106,7 @@ const Header = ( {startColor, menuVisible, bg} : {startColor : number, menuVisib
           </nav> : <></>}
           {/** Menu */}
           { menuVisible ?
-          <div className="mt-[24px] mr-[54px] block relative float-right">
+          <div className="mt-[18px] mr-[54px] block relative float-right">
             <nav className="block float-left">
               <ul className="inline-block align-top">
                 <li className="inline-block aligh-top relative">

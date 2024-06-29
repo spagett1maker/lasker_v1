@@ -15,9 +15,9 @@ const Hero = () => {
             className="-top-40 left-0 md:left-60 md:-top-20"
             fill="white"
           />
-          <div className="z-0 absolute top-0 left-0 w-[200%] h-[200%] -rotate-[45deg] bg-[#3f3fbf]l bg-[#13144d]"/>
+          <div className="z-0 absolute top-0 left-0 w-[200%] h-[200%] -rotate-[45deg] bg-[#13144d]"/>
           <div className=" z-0 absolute top-32 left-0 w-[200%] h-[200%] -rotate-[45deg] bg-black"/>
-          <div className="z-0 absolute top-40 left-0 w-[200%] h-[200%] -rotate-[45deg] bg-[#3f3fbf]l bg-[#13144d]"/>
+          <div className="z-0 absolute top-40 left-0 w-[200%] h-[200%] -rotate-[45deg] bg-[#13144d]"/>
           <div className=" z-0 absolute top-52 left-0 w-[200%] h-[200%] -rotate-[45deg] bg-black"/>
           
 
