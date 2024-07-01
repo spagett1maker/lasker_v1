@@ -1,5 +1,6 @@
-import Hero from "@/components/Hero";
-import Footer from "@/components/Footer";
+
+import Image from 'next/image';
+
 import HeaderO from "@/components/Header/other";
 
 export default function About() {
@@ -12,27 +13,111 @@ export default function About() {
             <div className="pt-[95px] pb-[136px]">
               <div className="block">
                 {/** top section */}
-                <div className="mt-[105px] mb-[60px]">
+                <div className="pt-[105px] mb-[60px]">
                   <div className="relative max-w-[984px] my-0 mx-auto">
                     <div className="relative">
-                      <p className=" text-lg text-[#00a0e9] mb-[17px] font-semibold ml-[-3px]">Our mission</p>
-                      <h1 className="mb-[27px] ml-[-5px] font-bold text-5xl leading-tight">현재의 광고 시스템에서 나아가 사용자들에게 <br/>더 나은 광고 경험을 제공하고자 합니다.</h1>
-                      <p className=" text-lg break-keep whitespace-pre-line">
-                        유저 데이터 기반의 광고 시스템을 넘어서 컨텐츠와 어울리는 광고를 자동으로 검색 및 삽입하여,<br/>
-                        영상 시청을 방해하지 않으며 시청자의 광고 인식 경험을 개선시키고 효과를 극대 화하고자 합니다.
-                      </p>
+                      <p className=" text-lg text-[#00a0e9] mb-[17px] font-semibold ">About Lasker</p>
+                      <h1 className="mb-[27px] ml-[-4px] font-bold text-5xl leading-tight">
+                        Lasker 소개
+                      </h1>
                     </div>
                   </div>
                 </div>
-                {/** main section */}
-                <div className="mb-[94px]">
+                <div className="pb-[94px]">
                   <div className="my-0 mx-auto max-w-[984px]">
                     <h2 className="mb-[37px] mt-[59px] text-2xl font-semibold relative text-black">
-                      <span>No.</span>
-                      <span>1 디지털 마케팅 플랫폼 컴퍼티</span>
+                      <span>글로벌 디지털 영상 광고 시장을 선도하는</span>
                       <br/>
-                      <span>통합 미디어 플래닝, 등</span>
+                      <span>No.</span>
+                      <span>1 Ad-Tech Startup</span>
                     </h2>
+                    <div className='mt-[45px]'>
+                      <div className='relative overflow-hidden border w-full h-[500px] my-0 mx-auto items-center'>
+                        <Image src="/logo/logo_bg_cut.png" alt="logo_feature" width={2001} height={2001} className='w-3/5 h-full object-cover mx-auto' />
+                      </div>
+                    </div>
+                    <div className='mt-[64px]'>
+                      <div className='float-left w-1/2'>
+                        <h3 className='text-2xl font-semibold'>
+                          <span>Lasker Inc.는</span> <br/>
+                          <span>현재의 광고 시스템에서 나아가</span>
+                          <br/>
+                          <span>사용자들에게 더 나은 광고 경험을 제공합니다.</span>
+                        </h3>
+                      </div>
+                      <div className='float-left w-1/2'>
+                        <p className=' text-md mb-[15px] text-justify'>
+                        유저 데이터 기반의 광고 시스템을 넘어서 컨텐츠와 어울리는 광고를 자동으로 검색 및 삽입하여,
+                        영상 시청을 방해하지 않으며 시청자의 광고 인식 경험을 개선시키고 효과를 극대 화하고자 합니다.
+                        </p>
+                        <p className=" text-md break-keep whitespace-pre-line">
+                        유저 데이터 기반의 광고 시스템을 넘어서 컨텐츠와 어울리는 광고를 자동으로 검색 및 삽입하여,
+                        영상 시청을 방해하지 않으며 시청자의 광고 인식 경험을 개선시키고 효과를 극대 화하고자 합니다.
+                      </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="mt-[105px] mb-[60px]">
+                  <div className="relative max-w-[984px] my-0 mx-auto">
+                    <div className="relative">
+                      
+                    </div>
+                  </div>
+                </div>
+                
+
+                {/** section 2 */}
+                <div className='px-0 py-[95px] bg-[#13144d]'>
+                  <div className=' text-2xl font-medium my-0 mx-auto max-w-[984px]'>
+                    <div className="relative">
+                      <p className=" text-lg text-[#898be1] mb-[17px] font-semibold ml-[-3px]">Our mission</p>
+                      <h1 className="mb-[27px] text-white ml-[-5px] font-bold text-4xl leading-tight">
+                        기술을 활용해 광고 경험을 디자인하고, <br/>
+                        AI를 통해 광고 효율을 최적화하며, <br/>
+                        시장 트렌드를 선도하는 디지털 광고 솔루션을 제공합니다.
+                      </h1>
+                        
+                    </div>
+                  </div>
+                </div>
+
+                <div className='pt-[94px]'>
+                  <div className='max-w-[984px] my-0 mx-auto'>
+                    <h3 className='w-[306px] mt-0 text-2xl inline-block align-top font-bold'>회사정보</h3>
+                    <ul className='inline-block align-top w-[calc(100%-354px)]'>
+                      <li className='pt-0 py-[20px] border-b border-[#eaeaea]'>
+                        <b className='w-[126px] text-[16px] text-black inline-block'>회사명</b>
+                        <p className='inline-block relative top-[2px] text-[15px] font-light'>{'('}주{')'}라스커</p>
+                      </li>
+                      <li className='py-[20px] border-b border-[#eaeaea]'>
+                        <b className='w-[126px] text-[16px] text-black inline-block'>대표이사</b>
+                        <p className='inline-block relative top-[2px] text-[15px] font-light'>유수진</p>
+                      </li>
+                      <li className='py-[20px] border-b border-[#eaeaea]'>
+                        <b className='w-[126px] text-[16px] text-black inline-block'>설립일</b>
+                        <p className='inline-block relative top-[2px] text-[15px] font-light'>2024년 3월 19일</p>
+                      </li>
+                      <li className='py-[20px] border-b border-[#eaeaea]'>
+                        <b className='w-[126px] text-[16px] text-black inline-block'>주소</b>
+                        <p className='inline-block relative top-[2px] text-[15px] font-light'>대전광역시 유성구 문지로 193, KAIST 문지캠퍼스 진리관동 T139호 (34051)</p>
+                      </li>
+                      <li className='py-[20px] border-b border-[#eaeaea]'>
+                        <b className='w-[126px] text-[16px] text-black inline-block'>연락처</b>
+                        <p className='inline-block relative top-[2px] text-[15px] font-light'>contact@lakser.tech</p>
+                      </li>
+                      <li className='py-[20px] '>
+                        <b className='w-[126px] mr-[17px] text-[16px] text-black inline-block align-top'>주요 사업</b>
+                        <ul className='inline-block mt-[2px] list-disc font-light'>
+                          <li className='text-[15px] mb-[7px] relative pl-[7px]'>Ad Tech 관련 솔루션 개발</li>
+                          <li className='text-[15px] mb-[7px] relative pl-[7px]'>AI를 활용한 영상 광고 솔루션 개발</li>
+                          <li className='text-[15px] mb-[7px] relative pl-[7px]'>End-to-End 디지털 영상 광고 거래 자동화 솔루션 개발</li>
+                          <li className='text-[15px] mb-[7px] relative pl-[7px]'>데이터 기반 영상 광고 기획 및 분석 컨설팅</li>
+                        </ul>
+                        
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>

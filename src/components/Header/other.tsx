@@ -77,28 +77,35 @@ const HeaderO = ({menuVisible}:{menuVisible:boolean}) => {
               <ul className="inline-block align-top">
                 <li className="inline-block aligh-top relative">
                   <Link href="/about" className="text-[15px] py-[27px] px-[22px] relative block font-semibold">
-                    <span className="relative">
+                    <span className="relative hover:font-bold border-[#00a0e9] hover:border-b-2 pb-[2px]">
                       회사소개
                     </span>
                   </Link>
                 </li>
                 <li className="inline-block aligh-top relative">
+                  <Link href="/solution" className="text-[15px] py-[27px] px-[22px] relative block font-semibold">
+                    <span className="relative hover:font-bold border-[#00a0e9] hover:border-b-2 pb-[2px]">
+                      솔루션
+                    </span>
+                  </Link>
+                </li>
+                <li className="inline-block aligh-top relative">
                   <Link href="/career" className="text-[15px] py-[27px] px-[22px] relative block font-semibold">
-                    <span className="relative">
+                    <span className="relative hover:font-bold border-[#00a0e9] hover:border-b-2 pb-[2px]">
                       인재영입
                     </span>
                   </Link>
                 </li>
                 <li className="inline-block aligh-top relative">
                   <Link href="/news" className="text-[15px] py-[27px] px-[22px] relative block font-semibold">
-                    <span className="relative">
+                    <span className="relative hover:font-bold border-[#00a0e9] hover:border-b-2 pb-[2px]">
                       회사소식
                     </span>
                   </Link>
                 </li>
                 <li className="inline-block aligh-top relative">
                   <Link href="/contact" className="text-whitelllll text-[15px] py-[27px] px-[22px] relative block font-semibold">
-                    <span className="relative">
+                    <span className="relative hover:font-bold border-[#00a0e9] hover:border-b-2 pb-[2px]">
                       문의하기
                     </span>
                   </Link>

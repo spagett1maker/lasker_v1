@@ -19,7 +19,7 @@ export default function NewsPage() {
                   <div className="relative max-w-[984px] my-0 mx-auto">
                     <div className="relative">
                       <p className=" text-lg text-[#00a0e9] mb-[17px] font-semibold ml-[-3px]">Our News</p>
-                      <h1 className="mb-[82px] ml-[-5px] font-bold text-5xl">회사 블로그</h1>
+                      <h1 className="mb-[82px] ml-[-5px] font-bold text-5xl">Lasker 블로그</h1>
                     </div>
                   </div>
                 </div>

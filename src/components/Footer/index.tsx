@@ -5,7 +5,7 @@ import { DownloadIcon } from "../ui/icons";
 const Footer = () => {
   return (
     <div className="relative">
-      <footer className="px-0 pt-[138px] pb-[100px] bg-black block">
+      <footer className="px-0 pt-[118px] pb-[80px] bg-black block">
         <div className="max-w-[984px] my-0 mx-auto relative">
           {/** top */}
           <div className="pb-0 block">
@@ -61,7 +61,7 @@ const Footer = () => {
               </div>
               <div>
                 <b className="text-[13px] pb-[10px] block text-[#eee] font-semibold">Contact</b>
-                <p className="text-[13px] mb-[21px] text-[#888]">전화번호</p>
+                <p className="text-[13px] mb-[21px] text-[#888]">contact@lasker.tech</p>
               </div>
               <div className="mt-[54px] block align-baseline">
                 <Link href="" className="min-w-[180px] py-[18px] pr-[19px] pl-[19px] shadow-none outline-none text-sm overflow-hidden relative bg-[#00a0e9] inline-box align-middle text-white ">
@@ -73,35 +73,15 @@ const Footer = () => {
             </div>
           </div>
           {/** bottom */}
-          <div className="pt-[41px] mt-[20px] clear-both w-full border-t border-gray-700">
+          <div className="pt-[11px] mt-[20px] clear-both w-full border-t border-gray-700">
             <div className="float-left">
-              <nav className="ml-[-15px] block">
-                <ul>
-                  <li className="float-left">
-                    <Link href="/" className="text-[#ddd] font-bold text-xs inline-block py-[10px] px-[15px]">
-                      개인정보처리방침
-                    </Link>
-                  </li>
-                  <li className="float-left">
-                    <Link href="/" className="text-[#888] font-bold text-xs inline-block py-[10px] px-[15px]">
-                      개인정보처리방침
-                    </Link>
-                  </li>
-                  <li className="float-left">
-                    <Link href="/" className="text-[#888] font-bold text-xs inline-block py-[10px] px-[15px]">
-                      개인정보처리방침
-                    </Link>
-                  </li>
-                  <li className="float-left">
-                    <Link href="/" className="text-[#888] font-bold text-xs inline-block py-[10px] px-[15px]">
-                      개인정보처리방침
-                    </Link>
-                  </li>
-                </ul>
-              </nav>
+              
               <div>
                 <div className="pt-[6px] pb-[2px]">
-                  <small className="pr-[10px] mr-[7px] text-xs text-[#888]">상호명 : (주)라스커</small>
+                  <small className="pr-[5px] mr-[7px] text-xs text-[#888]">상호명 : (주)라스커</small>
+                  <small className="pr-[5px] mr-[7px] text-xs text-[#888]">{'|'}</small>
+                  <small className="pr-[5px] mr-[7px] text-xs text-[#888]">대표자 : 유수진</small>
+                  <small className="pr-[5px] mr-[7px] text-xs text-[#888]">{'|'}</small>
                   <small className="pr-0 mr-0 text-xs text-[#888] relative">사업자등록번호 : 407-81-33448</small>
                 </div>
                 <small className="block clear-both text-[#888] text-xs">Copyright ⓒ LASKER Co., LTD. All Rights Reserved.</small>
