@@ -42,7 +42,7 @@ const HeaderO = ({menuVisible}:{menuVisible:boolean}) => {
           {/** Logo */}
           <h1 className="w-[250px] h-[80px] top-[9px] absolute left-[-20px]">
             <Link href="/" className="block w-full h-full text-3xl">
-              <Image src="/logo_black.png" alt="logo" className="block h-full w-full" width={600} height={200} />
+              <Image src="/logo/logo_black.png" alt="logo" className="block h-full w-full" width={600} height={200} />
               
             </Link>
           </h1>
