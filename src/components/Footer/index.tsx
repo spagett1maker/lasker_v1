@@ -29,6 +29,14 @@ const Footer = () => {
                   </ul>
                 </li>
                 <li className="relative max-w-[300px] pb-[14px]">
+                  <Link href="/solution" className="text-white font-medium text-2xl">
+                    <span>솔루션</span>
+                  </Link>
+                  <ul className="hidden left-[174px] top-[4px] absolute">
+                    
+                  </ul>
+                </li>
+                <li className="relative max-w-[300px] pb-[14px]">
                   <Link href="/career" className="text-white font-medium text-2xl">
                     <span>인재영입</span>
                   </Link>

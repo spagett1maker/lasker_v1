@@ -247,8 +247,8 @@ const Hero = () => {
                     AI 기반 맥락 분석을 통한 <br/> 최적의 광고 삽입
                   </span>
                 </h2>
-                <Link href="/" className=" text-base inine-block relative align-middle text-center min-w-[150px] py-[20px] pr-[40px]">
-                  <span className="text-white">회사 소개 바로가기</span>
+                <Link href="/solution" className=" text-base inine-block relative align-middle text-center min-w-[150px] py-[20px] pr-[40px]">
+                  <span className="text-white">솔루션 바로가기</span>
                   <span aria-hidden="true" className="pl-[10px] hover:pl-[22px] relative transition-all">→</span>
                 </Link>
                 

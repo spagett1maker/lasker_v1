@@ -32,10 +32,10 @@ export default function NewsPage() {
                         <Link 
                           key={post.id}
                           href={`/news/posts/${post.id}`}
-                          className="mb-[40px] border border-[#eaeaea] relative clear-both float-left max-w-[398px]">
+                          className="mb-[20px] border border-[#eaeaea] relative clear-both float-left max-w-[398px]">
                           <div className="relative">
                             <div className="relative">
-                              <Image src="/test.png" alt="news1" width={400} height={300} className="w-full h-[200px] object-cover"/>
+                              <Image src={post.src} alt="news1" width={400} height={300} className="w-full h-[200px] object-cover"/>
                             </div>
                             <div className="p-[20px]">
                               <p className="text-[#00a0e9] text-lg font-semibold mb-[10px]">{post.title}</p>

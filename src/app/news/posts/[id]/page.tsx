@@ -1,9 +1,16 @@
 
 import Image from 'next/image';
+import { postList } from "@/lib/bloglist";
 
 import HeaderO from "@/components/Header/other";
 
+function findIndexById(id: string) {
+  return postList.findIndex((post) => post.id.toString() === id);
+}
+
 export default function Page({ params }: { params: { id: string } }) {
+  const index = findIndexById(params.id);
+  const post = postList[index];
   return (
     <>
       <HeaderO menuVisible={true}/>
@@ -16,18 +23,18 @@ export default function Page({ params }: { params: { id: string } }) {
                 <div className="mt-[105px] mb-[60px]">
                   <div className="relative max-w-[984px] my-0 mx-auto">
                     <div className="relative">
-                      <p className=" text-lg text-[#00a0e9] mb-[17px] font-semibold ">마케팅</p>
+                      <p className=" text-lg text-[#00a0e9] mb-[17px] font-semibold ">해외사례</p>
                       <h1 className="mb-[15px] ml-[-4px] font-bold text-5xl leading-tight">
-                        <span>마케팅 방식의 변화</span>
+                        <span>{post.title}</span>
                         <br/>
                         <span></span>
                       </h1>
                       <p className=" text-lg break-keep whitespace-pre-line mb-[37px] text-[#888]">
-                        쿠키 제한부터 프로그래매틱 광고까지
+                        {post.content}
                       </p>
                     </div>
                     <div className='relative pt-[20px] '>
-                      <Image src="/feature.jpg" alt="feature" width={1920} height={1080}></Image>
+                      <Image src={post.src} alt="feature" width={1920} height={1080}></Image>
                     </div>
                   </div>
                 </div>

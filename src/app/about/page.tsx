@@ -26,6 +26,8 @@ export default function About() {
                   </div>
                 </div>
 
+                
+
 {/** 
                 <div className='max-w-[984px] my-0 mx-auto'>
                   <nav className='mb-[70px] relative mt-[-7px]'>
