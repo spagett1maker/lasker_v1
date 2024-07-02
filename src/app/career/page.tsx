@@ -49,7 +49,7 @@ export default function Career() {
                     </div>
                     <div className='pt-[45px] justify-center'>
                         <Link
-                          href="/solution"
+                          href="https://childish-denim-9a7.notion.site/daff2521b100426b9a811dbd41942aad"
                           className="flex w-[250px] justify-center mt-[10px] px-[20px] py-[10px] text-center border-2 border-black hover:bg-black hover:text-white font-bold text-md transition-all duration-300 ease-in-out"
                         >
                           채용 공고 바로가기
